@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SakuraDate - Sign In</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      width: 380px;
+      padding: 40px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 24px;
+      color: #e75480;
+      font-family: 'Brush Script MT', cursive;
+    }
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      margin-bottom: 16px;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.3s;
+    }
+    .btn-google {
+      background: white;
+      border: 1px solid #e0e0e0;
+      color: #555;
+    }
+    .btn-google:hover {
+      background: #f8f8f8;
+    }
+    .btn-primary {
+      background: #e75480;
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #d44d76;
+    }
+    .divider {
+      margin: 20px 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+    .divider-text {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 0 10px;
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #777;
+      font-size: 14px;
+    }
+    .input-group {
+      margin-bottom: 16px;
+      text-align: left;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      font-size: 14px;
+      color: #555;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 16px;
+      background: rgba(255, 255, 255, 0.7);
+    }
+    input:focus {
+      outline: none;
+      border-color: #e75480;
+    }
+    .forgot-password {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+    .forgot-password a {
+      color: #e75480;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .footer {
+      margin-top: 24px;
+      font-size: 14px;
+      color: #666;
+    }
+    .footer a {
+      color: #e75480;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .promo {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">SakuraDate</div>
+    
+    <button class="btn btn-google">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8h-1.26A8 8 0 1 0 20 16"></path>
+        <path d="M14 15l-3-3-3 3"></path>
+        <path d="M11 12h7"></path>
+      </svg>
+      Sign In with Google
+    </button>
+    
+    <div class="divider">
+      <span class="divider-text">or</span>
+    </div>
+    
+    <form>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+      
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+      </div>
+      
+      <div class="forgot-password">
+        <a href="#">Forgot a password?</a>
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    
+    <div class="footer">
+      Don't have an account? <a href="#">Sign Up</a>
+    </div>
+    
+    <div class="promo">
+      <p>Find amazing interlocutors who share your hobbies</p>
+      <p>Awesome chatting tools for your success</p>
+    </div>
+  </div>
+</body>
+</html>
