@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SakuraDate - Sign In</title>
+  <style>
+    /* Ваши стили (оставьте без изменений) */
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; ... }
+    .container { background: rgba(255, 255, 255, 0.85); ... }
+    /* ... остальной CSS ... */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">SakuraDate</div>
+    
+    <button class="btn btn-google">Sign In with Google</button>
+    
+    <div class="divider"><span class="divider-text">or</span></div>
+    
+    <!-- Измененная форма (добавлены action и method) -->
+    <form action="/signin" method="POST">
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="forgot-password">
+        <a href="#">Forgot a password?</a>
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    
+    <div class="footer">
+      Don't have an account? <a href="#">Sign Up</a>
+    </div>
+  </div>
+</body>
+</html>
